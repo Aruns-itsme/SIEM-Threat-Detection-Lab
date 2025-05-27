@@ -1,0 +1,603 @@
+<group name="custom-wazuh-rules">
+
+  <!-- T1131: Detects Creation of scheduled tasks or services -->
+  <rule id="200030" level="10">
+    <if_sid>61603</if_sid>
+    <field name="win.eventdata.Image">*schtasks*</field>
+    <description>Creation of scheduled tasks or services Detected (MITRE T1131)</description>
+    <mitre>
+      <id>T1131</id>
+      <tactic>Credential Access</tactic>
+      <technique>Creation of scheduled tasks or services</technique>
+    </mitre>
+  </rule>
+
+  <!-- T1132: Detects Exploiting system utilities for higher privileges -->
+  <rule id="200031" level="10">
+    <if_sid>61603</if_sid>
+    <field name="win.eventdata.Image">*whoami*</field>
+    <description>Exploiting system utilities for higher privileges Detected (MITRE T1132)</description>
+    <mitre>
+      <id>T1132</id>
+      <tactic>Credential Access</tactic>
+      <technique>Exploiting system utilities for higher privileges</technique>
+    </mitre>
+  </rule>
+
+  <!-- T1133: Detects Masking command execution with obfuscation -->
+  <rule id="200032" level="10">
+    <if_sid>61603</if_sid>
+    <field name="win.eventdata.Image">*powershell.exe -EncodedCommand*</field>
+    <description>Masking command execution with obfuscation Detected (MITRE T1133)</description>
+    <mitre>
+      <id>T1133</id>
+      <tactic>Credential Access</tactic>
+      <technique>Masking command execution with obfuscation</technique>
+    </mitre>
+  </rule>
+
+  <!-- T1134: Detects Harvesting login credentials from memory -->
+  <rule id="200033" level="10">
+    <if_sid>61603</if_sid>
+    <field name="win.eventdata.Image">*mimikatz.exe*</field>
+    <description>Harvesting login credentials from memory Detected (MITRE T1134)</description>
+    <mitre>
+      <id>T1134</id>
+      <tactic>Credential Access</tactic>
+      <technique>Harvesting login credentials from memory</technique>
+    </mitre>
+  </rule>
+
+  <!-- T1135: Detects System or network enumeration commands -->
+  <rule id="200034" level="10">
+    <if_sid>61603</if_sid>
+    <field name="win.eventdata.Image">*net user*</field>
+    <description>System or network enumeration commands Detected (MITRE T1135)</description>
+    <mitre>
+      <id>T1135</id>
+      <tactic>Credential Access</tactic>
+      <technique>System or network enumeration commands</technique>
+    </mitre>
+  </rule>
+
+  <!-- T1136: Detects Remote service usage for movement -->
+  <rule id="200035" level="10">
+    <if_sid>61603</if_sid>
+    <field name="win.eventdata.Image">*PsExec.exe*</field>
+    <description>Remote service usage for movement Detected (MITRE T1136)</description>
+    <mitre>
+      <id>T1136</id>
+      <tactic>Credential Access</tactic>
+      <technique>Remote service usage for movement</technique>
+    </mitre>
+  </rule>
+
+  <!-- T1137: Detects Staging files for exfiltration -->
+  <rule id="200036" level="10">
+    <if_sid>61603</if_sid>
+    <field name="win.eventdata.Image">*copy*</field>
+    <description>Staging files for exfiltration Detected (MITRE T1137)</description>
+    <mitre>
+      <id>T1137</id>
+      <tactic>Credential Access</tactic>
+      <technique>Staging files for exfiltration</technique>
+    </mitre>
+  </rule>
+
+  <!-- T1138: Detects Beaconing to external command servers -->
+  <rule id="200037" level="10">
+    <if_sid>61603</if_sid>
+    <field name="win.eventdata.Image">*DownloadString*</field>
+    <description>Beaconing to external command servers Detected (MITRE T1138)</description>
+    <mitre>
+      <id>T1138</id>
+      <tactic>Credential Access</tactic>
+      <technique>Beaconing to external command servers</technique>
+    </mitre>
+  </rule>
+
+  <!-- T1139: Detects Copying data to removable media or network -->
+  <rule id="200038" level="10">
+    <if_sid>61603</if_sid>
+    <field name="win.eventdata.Image">*Out-File*</field>
+    <description>Copying data to removable media or network Detected (MITRE T1139)</description>
+    <mitre>
+      <id>T1139</id>
+      <tactic>Credential Access</tactic>
+      <technique>Copying data to removable media or network</technique>
+    </mitre>
+  </rule>
+
+  <!-- T1140: Detects Malicious script execution using renamed tools -->
+  <rule id="200039" level="10">
+    <if_sid>61603</if_sid>
+    <field name="win.eventdata.Image">*Start-Process notepad.exe*</field>
+    <description>Malicious script execution using renamed tools Detected (MITRE T1140)</description>
+    <mitre>
+      <id>T1140</id>
+      <tactic>Credential Access</tactic>
+      <technique>Malicious script execution using renamed tools</technique>
+    </mitre>
+  </rule>
+
+  <!-- T1141: Detects Creation of scheduled tasks or services -->
+  <rule id="200040" level="10">
+    <if_sid>61603</if_sid>
+    <field name="win.eventdata.Image">*schtasks*</field>
+    <description>Creation of scheduled tasks or services Detected (MITRE T1141)</description>
+    <mitre>
+      <id>T1141</id>
+      <tactic>Credential Access</tactic>
+      <technique>Creation of scheduled tasks or services</technique>
+    </mitre>
+  </rule>
+
+  <!-- T1142: Detects Exploiting system utilities for higher privileges -->
+  <rule id="200041" level="10">
+    <if_sid>61603</if_sid>
+    <field name="win.eventdata.Image">*whoami*</field>
+    <description>Exploiting system utilities for higher privileges Detected (MITRE T1142)</description>
+    <mitre>
+      <id>T1142</id>
+      <tactic>Credential Access</tactic>
+      <technique>Exploiting system utilities for higher privileges</technique>
+    </mitre>
+  </rule>
+
+  <!-- T1143: Detects Masking command execution with obfuscation -->
+  <rule id="200042" level="10">
+    <if_sid>61603</if_sid>
+    <field name="win.eventdata.Image">*powershell.exe -EncodedCommand*</field>
+    <description>Masking command execution with obfuscation Detected (MITRE T1143)</description>
+    <mitre>
+      <id>T1143</id>
+      <tactic>Credential Access</tactic>
+      <technique>Masking command execution with obfuscation</technique>
+    </mitre>
+  </rule>
+
+  <!-- T1144: Detects Harvesting login credentials from memory -->
+  <rule id="200043" level="10">
+    <if_sid>61603</if_sid>
+    <field name="win.eventdata.Image">*mimikatz.exe*</field>
+    <description>Harvesting login credentials from memory Detected (MITRE T1144)</description>
+    <mitre>
+      <id>T1144</id>
+      <tactic>Credential Access</tactic>
+      <technique>Harvesting login credentials from memory</technique>
+    </mitre>
+  </rule>
+
+  <!-- T1145: Detects System or network enumeration commands -->
+  <rule id="200044" level="10">
+    <if_sid>61603</if_sid>
+    <field name="win.eventdata.Image">*net user*</field>
+    <description>System or network enumeration commands Detected (MITRE T1145)</description>
+    <mitre>
+      <id>T1145</id>
+      <tactic>Credential Access</tactic>
+      <technique>System or network enumeration commands</technique>
+    </mitre>
+  </rule>
+
+  <!-- T1146: Detects Remote service usage for movement -->
+  <rule id="200045" level="10">
+    <if_sid>61603</if_sid>
+    <field name="win.eventdata.Image">*PsExec.exe*</field>
+    <description>Remote service usage for movement Detected (MITRE T1146)</description>
+    <mitre>
+      <id>T1146</id>
+      <tactic>Credential Access</tactic>
+      <technique>Remote service usage for movement</technique>
+    </mitre>
+  </rule>
+
+  <!-- T1147: Detects Staging files for exfiltration -->
+  <rule id="200046" level="10">
+    <if_sid>61603</if_sid>
+    <field name="win.eventdata.Image">*copy*</field>
+    <description>Staging files for exfiltration Detected (MITRE T1147)</description>
+    <mitre>
+      <id>T1147</id>
+      <tactic>Credential Access</tactic>
+      <technique>Staging files for exfiltration</technique>
+    </mitre>
+  </rule>
+
+  <!-- T1148: Detects Beaconing to external command servers -->
+  <rule id="200047" level="10">
+    <if_sid>61603</if_sid>
+    <field name="win.eventdata.Image">*DownloadString*</field>
+    <description>Beaconing to external command servers Detected (MITRE T1148)</description>
+    <mitre>
+      <id>T1148</id>
+      <tactic>Credential Access</tactic>
+      <technique>Beaconing to external command servers</technique>
+    </mitre>
+  </rule>
+
+  <!-- T1149: Detects Copying data to removable media or network -->
+  <rule id="200048" level="10">
+    <if_sid>61603</if_sid>
+    <field name="win.eventdata.Image">*Out-File*</field>
+    <description>Copying data to removable media or network Detected (MITRE T1149)</description>
+    <mitre>
+      <id>T1149</id>
+      <tactic>Credential Access</tactic>
+      <technique>Copying data to removable media or network</technique>
+    </mitre>
+  </rule>
+
+  <!-- T1150: Detects Malicious script execution using renamed tools -->
+  <rule id="200049" level="10">
+    <if_sid>61603</if_sid>
+    <field name="win.eventdata.Image">*Start-Process notepad.exe*</field>
+    <description>Malicious script execution using renamed tools Detected (MITRE T1150)</description>
+    <mitre>
+      <id>T1150</id>
+      <tactic>Credential Access</tactic>
+      <technique>Malicious script execution using renamed tools</technique>
+    </mitre>
+  </rule>
+
+  <!-- T1151: Detects Creation of scheduled tasks or services -->
+  <rule id="200050" level="10">
+    <if_sid>61603</if_sid>
+    <field name="win.eventdata.Image">*schtasks*</field>
+    <description>Creation of scheduled tasks or services Detected (MITRE T1151)</description>
+    <mitre>
+      <id>T1151</id>
+      <tactic>Credential Access</tactic>
+      <technique>Creation of scheduled tasks or services</technique>
+    </mitre>
+  </rule>
+
+  <!-- T1152: Detects Exploiting system utilities for higher privileges -->
+  <rule id="200051" level="10">
+    <if_sid>61603</if_sid>
+    <field name="win.eventdata.Image">*whoami*</field>
+    <description>Exploiting system utilities for higher privileges Detected (MITRE T1152)</description>
+    <mitre>
+      <id>T1152</id>
+      <tactic>Credential Access</tactic>
+      <technique>Exploiting system utilities for higher privileges</technique>
+    </mitre>
+  </rule>
+
+  <!-- T1153: Detects Masking command execution with obfuscation -->
+  <rule id="200052" level="10">
+    <if_sid>61603</if_sid>
+    <field name="win.eventdata.Image">*powershell.exe -EncodedCommand*</field>
+    <description>Masking command execution with obfuscation Detected (MITRE T1153)</description>
+    <mitre>
+      <id>T1153</id>
+      <tactic>Credential Access</tactic>
+      <technique>Masking command execution with obfuscation</technique>
+    </mitre>
+  </rule>
+
+  <!-- T1154: Detects Harvesting login credentials from memory -->
+  <rule id="200053" level="10">
+    <if_sid>61603</if_sid>
+    <field name="win.eventdata.Image">*mimikatz.exe*</field>
+    <description>Harvesting login credentials from memory Detected (MITRE T1154)</description>
+    <mitre>
+      <id>T1154</id>
+      <tactic>Credential Access</tactic>
+      <technique>Harvesting login credentials from memory</technique>
+    </mitre>
+  </rule>
+
+  <!-- T1155: Detects System or network enumeration commands -->
+  <rule id="200054" level="10">
+    <if_sid>61603</if_sid>
+    <field name="win.eventdata.Image">*net user*</field>
+    <description>System or network enumeration commands Detected (MITRE T1155)</description>
+    <mitre>
+      <id>T1155</id>
+      <tactic>Credential Access</tactic>
+      <technique>System or network enumeration commands</technique>
+    </mitre>
+  </rule>
+
+  <!-- T1156: Detects Remote service usage for movement -->
+  <rule id="200055" level="10">
+    <if_sid>61603</if_sid>
+    <field name="win.eventdata.Image">*PsExec.exe*</field>
+    <description>Remote service usage for movement Detected (MITRE T1156)</description>
+    <mitre>
+      <id>T1156</id>
+      <tactic>Credential Access</tactic>
+      <technique>Remote service usage for movement</technique>
+    </mitre>
+  </rule>
+
+  <!-- T1157: Detects Staging files for exfiltration -->
+  <rule id="200056" level="10">
+    <if_sid>61603</if_sid>
+    <field name="win.eventdata.Image">*copy*</field>
+    <description>Staging files for exfiltration Detected (MITRE T1157)</description>
+    <mitre>
+      <id>T1157</id>
+      <tactic>Credential Access</tactic>
+      <technique>Staging files for exfiltration</technique>
+    </mitre>
+  </rule>
+
+  <!-- T1158: Detects Beaconing to external command servers -->
+  <rule id="200057" level="10">
+    <if_sid>61603</if_sid>
+    <field name="win.eventdata.Image">*DownloadString*</field>
+    <description>Beaconing to external command servers Detected (MITRE T1158)</description>
+    <mitre>
+      <id>T1158</id>
+      <tactic>Credential Access</tactic>
+      <technique>Beaconing to external command servers</technique>
+    </mitre>
+  </rule>
+
+  <!-- T1159: Detects Copying data to removable media or network -->
+  <rule id="200058" level="10">
+    <if_sid>61603</if_sid>
+    <field name="win.eventdata.Image">*Out-File*</field>
+    <description>Copying data to removable media or network Detected (MITRE T1159)</description>
+    <mitre>
+      <id>T1159</id>
+      <tactic>Credential Access</tactic>
+      <technique>Copying data to removable media or network</technique>
+    </mitre>
+  </rule>
+
+  <!-- T1160: Detects Malicious script execution using renamed tools -->
+  <rule id="200059" level="10">
+    <if_sid>61603</if_sid>
+    <field name="win.eventdata.Image">*Start-Process notepad.exe*</field>
+    <description>Malicious script execution using renamed tools Detected (MITRE T1160)</description>
+    <mitre>
+      <id>T1160</id>
+      <tactic>Credential Access</tactic>
+      <technique>Malicious script execution using renamed tools</technique>
+    </mitre>
+  </rule>
+
+  <!-- T1161: Detects Creation of scheduled tasks or services -->
+  <rule id="200060" level="10">
+    <if_sid>61603</if_sid>
+    <field name="win.eventdata.Image">*schtasks*</field>
+    <description>Creation of scheduled tasks or services Detected (MITRE T1161)</description>
+    <mitre>
+      <id>T1161</id>
+      <tactic>Credential Access</tactic>
+      <technique>Creation of scheduled tasks or services</technique>
+    </mitre>
+  </rule>
+
+  <!-- T1162: Detects Exploiting system utilities for higher privileges -->
+  <rule id="200061" level="10">
+    <if_sid>61603</if_sid>
+    <field name="win.eventdata.Image">*whoami*</field>
+    <description>Exploiting system utilities for higher privileges Detected (MITRE T1162)</description>
+    <mitre>
+      <id>T1162</id>
+      <tactic>Credential Access</tactic>
+      <technique>Exploiting system utilities for higher privileges</technique>
+    </mitre>
+  </rule>
+
+  <!-- T1163: Detects Masking command execution with obfuscation -->
+  <rule id="200062" level="10">
+    <if_sid>61603</if_sid>
+    <field name="win.eventdata.Image">*powershell.exe -EncodedCommand*</field>
+    <description>Masking command execution with obfuscation Detected (MITRE T1163)</description>
+    <mitre>
+      <id>T1163</id>
+      <tactic>Credential Access</tactic>
+      <technique>Masking command execution with obfuscation</technique>
+    </mitre>
+  </rule>
+
+  <!-- T1164: Detects Harvesting login credentials from memory -->
+  <rule id="200063" level="10">
+    <if_sid>61603</if_sid>
+    <field name="win.eventdata.Image">*mimikatz.exe*</field>
+    <description>Harvesting login credentials from memory Detected (MITRE T1164)</description>
+    <mitre>
+      <id>T1164</id>
+      <tactic>Credential Access</tactic>
+      <technique>Harvesting login credentials from memory</technique>
+    </mitre>
+  </rule>
+
+  <!-- T1165: Detects System or network enumeration commands -->
+  <rule id="200064" level="10">
+    <if_sid>61603</if_sid>
+    <field name="win.eventdata.Image">*net user*</field>
+    <description>System or network enumeration commands Detected (MITRE T1165)</description>
+    <mitre>
+      <id>T1165</id>
+      <tactic>Credential Access</tactic>
+      <technique>System or network enumeration commands</technique>
+    </mitre>
+  </rule>
+
+  <!-- T1166: Detects Remote service usage for movement -->
+  <rule id="200065" level="10">
+    <if_sid>61603</if_sid>
+    <field name="win.eventdata.Image">*PsExec.exe*</field>
+    <description>Remote service usage for movement Detected (MITRE T1166)</description>
+    <mitre>
+      <id>T1166</id>
+      <tactic>Credential Access</tactic>
+      <technique>Remote service usage for movement</technique>
+    </mitre>
+  </rule>
+
+  <!-- T1167: Detects Staging files for exfiltration -->
+  <rule id="200066" level="10">
+    <if_sid>61603</if_sid>
+    <field name="win.eventdata.Image">*copy*</field>
+    <description>Staging files for exfiltration Detected (MITRE T1167)</description>
+    <mitre>
+      <id>T1167</id>
+      <tactic>Credential Access</tactic>
+      <technique>Staging files for exfiltration</technique>
+    </mitre>
+  </rule>
+
+  <!-- T1168: Detects Beaconing to external command servers -->
+  <rule id="200067" level="10">
+    <if_sid>61603</if_sid>
+    <field name="win.eventdata.Image">*DownloadString*</field>
+    <description>Beaconing to external command servers Detected (MITRE T1168)</description>
+    <mitre>
+      <id>T1168</id>
+      <tactic>Credential Access</tactic>
+      <technique>Beaconing to external command servers</technique>
+    </mitre>
+  </rule>
+
+  <!-- T1169: Detects Copying data to removable media or network -->
+  <rule id="200068" level="10">
+    <if_sid>61603</if_sid>
+    <field name="win.eventdata.Image">*Out-File*</field>
+    <description>Copying data to removable media or network Detected (MITRE T1169)</description>
+    <mitre>
+      <id>T1169</id>
+      <tactic>Credential Access</tactic>
+      <technique>Copying data to removable media or network</technique>
+    </mitre>
+  </rule>
+
+  <!-- T1170: Detects Malicious script execution using renamed tools -->
+  <rule id="200069" level="10">
+    <if_sid>61603</if_sid>
+    <field name="win.eventdata.Image">*Start-Process notepad.exe*</field>
+    <description>Malicious script execution using renamed tools Detected (MITRE T1170)</description>
+    <mitre>
+      <id>T1170</id>
+      <tactic>Credential Access</tactic>
+      <technique>Malicious script execution using renamed tools</technique>
+    </mitre>
+  </rule>
+
+  <!-- T1171: Detects Creation of scheduled tasks or services -->
+  <rule id="200070" level="10">
+    <if_sid>61603</if_sid>
+    <field name="win.eventdata.Image">*schtasks*</field>
+    <description>Creation of scheduled tasks or services Detected (MITRE T1171)</description>
+    <mitre>
+      <id>T1171</id>
+      <tactic>Credential Access</tactic>
+      <technique>Creation of scheduled tasks or services</technique>
+    </mitre>
+  </rule>
+
+  <!-- T1172: Detects Exploiting system utilities for higher privileges -->
+  <rule id="200071" level="10">
+    <if_sid>61603</if_sid>
+    <field name="win.eventdata.Image">*whoami*</field>
+    <description>Exploiting system utilities for higher privileges Detected (MITRE T1172)</description>
+    <mitre>
+      <id>T1172</id>
+      <tactic>Credential Access</tactic>
+      <technique>Exploiting system utilities for higher privileges</technique>
+    </mitre>
+  </rule>
+
+  <!-- T1173: Detects Masking command execution with obfuscation -->
+  <rule id="200072" level="10">
+    <if_sid>61603</if_sid>
+    <field name="win.eventdata.Image">*powershell.exe -EncodedCommand*</field>
+    <description>Masking command execution with obfuscation Detected (MITRE T1173)</description>
+    <mitre>
+      <id>T1173</id>
+      <tactic>Credential Access</tactic>
+      <technique>Masking command execution with obfuscation</technique>
+    </mitre>
+  </rule>
+
+  <!-- T1174: Detects Harvesting login credentials from memory -->
+  <rule id="200073" level="10">
+    <if_sid>61603</if_sid>
+    <field name="win.eventdata.Image">*mimikatz.exe*</field>
+    <description>Harvesting login credentials from memory Detected (MITRE T1174)</description>
+    <mitre>
+      <id>T1174</id>
+      <tactic>Credential Access</tactic>
+      <technique>Harvesting login credentials from memory</technique>
+    </mitre>
+  </rule>
+
+  <!-- T1175: Detects System or network enumeration commands -->
+  <rule id="200074" level="10">
+    <if_sid>61603</if_sid>
+    <field name="win.eventdata.Image">*net user*</field>
+    <description>System or network enumeration commands Detected (MITRE T1175)</description>
+    <mitre>
+      <id>T1175</id>
+      <tactic>Credential Access</tactic>
+      <technique>System or network enumeration commands</technique>
+    </mitre>
+  </rule>
+
+  <!-- T1176: Detects Remote service usage for movement -->
+  <rule id="200075" level="10">
+    <if_sid>61603</if_sid>
+    <field name="win.eventdata.Image">*PsExec.exe*</field>
+    <description>Remote service usage for movement Detected (MITRE T1176)</description>
+    <mitre>
+      <id>T1176</id>
+      <tactic>Credential Access</tactic>
+      <technique>Remote service usage for movement</technique>
+    </mitre>
+  </rule>
+
+  <!-- T1177: Detects Staging files for exfiltration -->
+  <rule id="200076" level="10">
+    <if_sid>61603</if_sid>
+    <field name="win.eventdata.Image">*copy*</field>
+    <description>Staging files for exfiltration Detected (MITRE T1177)</description>
+    <mitre>
+      <id>T1177</id>
+      <tactic>Credential Access</tactic>
+      <technique>Staging files for exfiltration</technique>
+    </mitre>
+  </rule>
+
+  <!-- T1178: Detects Beaconing to external command servers -->
+  <rule id="200077" level="10">
+    <if_sid>61603</if_sid>
+    <field name="win.eventdata.Image">*DownloadString*</field>
+    <description>Beaconing to external command servers Detected (MITRE T1178)</description>
+    <mitre>
+      <id>T1178</id>
+      <tactic>Credential Access</tactic>
+      <technique>Beaconing to external command servers</technique>
+    </mitre>
+  </rule>
+
+  <!-- T1179: Detects Copying data to removable media or network -->
+  <rule id="200078" level="10">
+    <if_sid>61603</if_sid>
+    <field name="win.eventdata.Image">*Out-File*</field>
+    <description>Copying data to removable media or network Detected (MITRE T1179)</description>
+    <mitre>
+      <id>T1179</id>
+      <tactic>Credential Access</tactic>
+      <technique>Copying data to removable media or network</technique>
+    </mitre>
+  </rule>
+
+  <!-- T1180: Detects Malicious script execution using renamed tools -->
+  <rule id="200079" level="10">
+    <if_sid>61603</if_sid>
+    <field name="win.eventdata.Image">*Start-Process notepad.exe*</field>
+    <description>Malicious script execution using renamed tools Detected (MITRE T1180)</description>
+    <mitre>
+      <id>T1180</id>
+      <tactic>Credential Access</tactic>
+      <technique>Malicious script execution using renamed tools</technique>
+    </mitre>
+  </rule>
+
+</group>
