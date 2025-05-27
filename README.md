@@ -45,20 +45,21 @@ For a detailed list, see [`lab-setup/tools_used.md`](lab-setup/tools_used.md).
 
 ## Repository Structure
 
+```bash
 siem-threat-detection-lab/
 ├── README.md
 ├── lab-setup/
-│ ├── vm_config.md
-│ ├── network_topology.png
-│ └── tools_used.md
+│   ├── vm_config.md
+│   ├── network_topology.png
+│   └── tools_used.md
 ├── attack-simulations/
-│ └── atomic_red_team_simulations.md
+│   └── atomic_red_team_simulations.md
 ├── detection-rules/
-│ ├── wazuh_detection_rules.xml
-│ └── splunk_detection_rules.md
+│   ├── wazuh_detection_rules.xml
+│   └── splunk_detection_rules.md
 ├── logs/
-│ ├── example_wazuh_alert.json
-│ └── splunk_alerts_export.csv
+│   ├── example_wazuh_alert.json
+│   └── splunk_alerts_export.csv
 
 ---
 
