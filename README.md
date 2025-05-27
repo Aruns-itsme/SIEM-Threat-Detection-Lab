@@ -60,7 +60,7 @@ siem-threat-detection-lab/
 ├── logs/
 │   ├── example_wazuh_alert.json
 │   └── splunk_alerts_export.csv
-
+```
 ---
 
 ## How to Set Up the Lab
