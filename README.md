@@ -47,19 +47,19 @@ For a detailed list, see [`lab-setup/tools_used.md`](lab-setup/tools_used.md).
 
 ```bash
 siem-threat-detection-lab/
-├── README.md
+├── README.md # Project overview, setup guide, and instructions
 ├── lab-setup/
-│   ├── vm_config.md
-│   ├── network_topology.png
-│   └── tools_used.md
+│   ├── vm_config.md # VM specifications and hardware requirements
+│   ├── network_topology.png # Network topology diagram of the lab environment
+│   └── tools_used.md # List of tools and software used in the project
 ├── attack-simulations/
-│   └── atomic_red_team_simulations.md
+│   └── atomic_red_team_simulations.md # MITRE ATT&CK simulation commands for Windows client
 ├── detection-rules/
-│   ├── wazuh_detection_rules.xml
-│   └── splunk_detection_rules.md
+│   ├── wazuh_detection_rules.xml # Wazuh detection rules for MITRE techniques
+│   └── splunk_detection_rules.md # Splunk detection rules for MITRE techniques
 ├── logs/
-│   ├── example_wazuh_alert.json
-│   └── splunk_alerts_export.csv
+│   ├── wazuh_alert_log.json # Sample Wazuh alert JSON for simulated detections
+│   └── splunk_alerts_log.csv # Sample Splunk alerts CSV for simulated detections
 ```
 ---
 
