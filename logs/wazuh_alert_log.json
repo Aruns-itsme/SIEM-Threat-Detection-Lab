@@ -1,0 +1,2002 @@
+[
+  {
+    "timestamp": "2024-05-28T14:00:00Z",
+    "rule": {
+      "level": 10,
+      "description": "Suspicious activity detected related to T1131",
+      "id": "200000",
+      "groups": [
+        "windows",
+        "sysmon",
+        "credential_access"
+      ],
+      "mitre": {
+        "id": "T1131",
+        "tactic": "Execution",
+        "technique": "Technique T1131"
+      }
+    },
+    "agent": {
+      "id": "001",
+      "name": "windows-client",
+      "ip": "192.168.56.101"
+    },
+    "manager": {
+      "name": "wazuh-manager"
+    },
+    "data": {
+      "win": {
+        "eventdata": {
+          "Image": "C:\\Windows\\System32\\tasklist.exe",
+          "CommandLine": "tasklist /v",
+          "ParentImage": "C:\\Windows\\System32\\explorer.exe"
+        },
+        "system": {
+          "providerName": "Microsoft-Windows-Security-Auditing",
+          "eventID": "4688"
+        }
+      }
+    },
+    "location": "C:\\Windows\\System32\\tasklist.exe"
+  },
+  {
+    "timestamp": "2024-05-28T14:01:00Z",
+    "rule": {
+      "level": 10,
+      "description": "Suspicious activity detected related to T1132",
+      "id": "200001",
+      "groups": [
+        "windows",
+        "sysmon",
+        "credential_access"
+      ],
+      "mitre": {
+        "id": "T1132",
+        "tactic": "Execution",
+        "technique": "Technique T1132"
+      }
+    },
+    "agent": {
+      "id": "001",
+      "name": "windows-client",
+      "ip": "192.168.56.101"
+    },
+    "manager": {
+      "name": "wazuh-manager"
+    },
+    "data": {
+      "win": {
+        "eventdata": {
+          "Image": "C:\\Windows\\System32\\cmd.exe",
+          "CommandLine": "cmd.exe /c whoami",
+          "ParentImage": "C:\\Windows\\System32\\explorer.exe"
+        },
+        "system": {
+          "providerName": "Microsoft-Windows-Security-Auditing",
+          "eventID": "4688"
+        }
+      }
+    },
+    "location": "C:\\Windows\\System32\\cmd.exe"
+  },
+  {
+    "timestamp": "2024-05-28T14:02:00Z",
+    "rule": {
+      "level": 10,
+      "description": "Suspicious activity detected related to T1133",
+      "id": "200002",
+      "groups": [
+        "windows",
+        "sysmon",
+        "credential_access"
+      ],
+      "mitre": {
+        "id": "T1133",
+        "tactic": "Execution",
+        "technique": "Technique T1133"
+      }
+    },
+    "agent": {
+      "id": "001",
+      "name": "windows-client",
+      "ip": "192.168.56.101"
+    },
+    "manager": {
+      "name": "wazuh-manager"
+    },
+    "data": {
+      "win": {
+        "eventdata": {
+          "Image": "C:\\Windows\\System32\\tasklist.exe",
+          "CommandLine": "tasklist /v",
+          "ParentImage": "C:\\Windows\\System32\\explorer.exe"
+        },
+        "system": {
+          "providerName": "Microsoft-Windows-Security-Auditing",
+          "eventID": "4688"
+        }
+      }
+    },
+    "location": "C:\\Windows\\System32\\tasklist.exe"
+  },
+  {
+    "timestamp": "2024-05-28T14:03:00Z",
+    "rule": {
+      "level": 10,
+      "description": "Suspicious activity detected related to T1134",
+      "id": "200003",
+      "groups": [
+        "windows",
+        "sysmon",
+        "credential_access"
+      ],
+      "mitre": {
+        "id": "T1134",
+        "tactic": "Execution",
+        "technique": "Technique T1134"
+      }
+    },
+    "agent": {
+      "id": "001",
+      "name": "windows-client",
+      "ip": "192.168.56.101"
+    },
+    "manager": {
+      "name": "wazuh-manager"
+    },
+    "data": {
+      "win": {
+        "eventdata": {
+          "Image": "C:\\Windows\\System32\\net.exe",
+          "CommandLine": "net localgroup administrators",
+          "ParentImage": "C:\\Windows\\System32\\cmd.exe"
+        },
+        "system": {
+          "providerName": "Microsoft-Windows-Security-Auditing",
+          "eventID": "4688"
+        }
+      }
+    },
+    "location": "C:\\Windows\\System32\\net.exe"
+  },
+  {
+    "timestamp": "2024-05-28T14:04:00Z",
+    "rule": {
+      "level": 10,
+      "description": "Suspicious activity detected related to T1135",
+      "id": "200004",
+      "groups": [
+        "windows",
+        "sysmon",
+        "credential_access"
+      ],
+      "mitre": {
+        "id": "T1135",
+        "tactic": "Execution",
+        "technique": "Technique T1135"
+      }
+    },
+    "agent": {
+      "id": "001",
+      "name": "windows-client",
+      "ip": "192.168.56.101"
+    },
+    "manager": {
+      "name": "wazuh-manager"
+    },
+    "data": {
+      "win": {
+        "eventdata": {
+          "Image": "C:\\Windows\\System32\\tasklist.exe",
+          "CommandLine": "tasklist /v",
+          "ParentImage": "C:\\Windows\\System32\\explorer.exe"
+        },
+        "system": {
+          "providerName": "Microsoft-Windows-Security-Auditing",
+          "eventID": "4688"
+        }
+      }
+    },
+    "location": "C:\\Windows\\System32\\tasklist.exe"
+  },
+  {
+    "timestamp": "2024-05-28T14:05:00Z",
+    "rule": {
+      "level": 10,
+      "description": "Suspicious activity detected related to T1136",
+      "id": "200005",
+      "groups": [
+        "windows",
+        "sysmon",
+        "credential_access"
+      ],
+      "mitre": {
+        "id": "T1136",
+        "tactic": "Execution",
+        "technique": "Technique T1136"
+      }
+    },
+    "agent": {
+      "id": "001",
+      "name": "windows-client",
+      "ip": "192.168.56.101"
+    },
+    "manager": {
+      "name": "wazuh-manager"
+    },
+    "data": {
+      "win": {
+        "eventdata": {
+          "Image": "C:\\Windows\\System32\\net.exe",
+          "CommandLine": "net localgroup administrators",
+          "ParentImage": "C:\\Windows\\System32\\cmd.exe"
+        },
+        "system": {
+          "providerName": "Microsoft-Windows-Security-Auditing",
+          "eventID": "4688"
+        }
+      }
+    },
+    "location": "C:\\Windows\\System32\\net.exe"
+  },
+  {
+    "timestamp": "2024-05-28T14:06:00Z",
+    "rule": {
+      "level": 10,
+      "description": "Suspicious activity detected related to T1137",
+      "id": "200006",
+      "groups": [
+        "windows",
+        "sysmon",
+        "credential_access"
+      ],
+      "mitre": {
+        "id": "T1137",
+        "tactic": "Execution",
+        "technique": "Technique T1137"
+      }
+    },
+    "agent": {
+      "id": "001",
+      "name": "windows-client",
+      "ip": "192.168.56.101"
+    },
+    "manager": {
+      "name": "wazuh-manager"
+    },
+    "data": {
+      "win": {
+        "eventdata": {
+          "Image": "C:\\Windows\\System32\\net.exe",
+          "CommandLine": "net localgroup administrators",
+          "ParentImage": "C:\\Windows\\System32\\cmd.exe"
+        },
+        "system": {
+          "providerName": "Microsoft-Windows-Security-Auditing",
+          "eventID": "4688"
+        }
+      }
+    },
+    "location": "C:\\Windows\\System32\\net.exe"
+  },
+  {
+    "timestamp": "2024-05-28T14:07:00Z",
+    "rule": {
+      "level": 10,
+      "description": "Suspicious activity detected related to T1138",
+      "id": "200007",
+      "groups": [
+        "windows",
+        "sysmon",
+        "credential_access"
+      ],
+      "mitre": {
+        "id": "T1138",
+        "tactic": "Execution",
+        "technique": "Technique T1138"
+      }
+    },
+    "agent": {
+      "id": "001",
+      "name": "windows-client",
+      "ip": "192.168.56.101"
+    },
+    "manager": {
+      "name": "wazuh-manager"
+    },
+    "data": {
+      "win": {
+        "eventdata": {
+          "Image": "C:\\Windows\\System32\\tasklist.exe",
+          "CommandLine": "tasklist /v",
+          "ParentImage": "C:\\Windows\\System32\\explorer.exe"
+        },
+        "system": {
+          "providerName": "Microsoft-Windows-Security-Auditing",
+          "eventID": "4688"
+        }
+      }
+    },
+    "location": "C:\\Windows\\System32\\tasklist.exe"
+  },
+  {
+    "timestamp": "2024-05-28T14:08:00Z",
+    "rule": {
+      "level": 10,
+      "description": "Suspicious activity detected related to T1139",
+      "id": "200008",
+      "groups": [
+        "windows",
+        "sysmon",
+        "credential_access"
+      ],
+      "mitre": {
+        "id": "T1139",
+        "tactic": "Execution",
+        "technique": "Technique T1139"
+      }
+    },
+    "agent": {
+      "id": "001",
+      "name": "windows-client",
+      "ip": "192.168.56.101"
+    },
+    "manager": {
+      "name": "wazuh-manager"
+    },
+    "data": {
+      "win": {
+        "eventdata": {
+          "Image": "C:\\Windows\\System32\\tasklist.exe",
+          "CommandLine": "tasklist /v",
+          "ParentImage": "C:\\Windows\\System32\\explorer.exe"
+        },
+        "system": {
+          "providerName": "Microsoft-Windows-Security-Auditing",
+          "eventID": "4688"
+        }
+      }
+    },
+    "location": "C:\\Windows\\System32\\tasklist.exe"
+  },
+  {
+    "timestamp": "2024-05-28T14:09:00Z",
+    "rule": {
+      "level": 10,
+      "description": "Obfuscated PowerShell Script Execution",
+      "id": "200009",
+      "groups": [
+        "windows",
+        "sysmon",
+        "credential_access"
+      ],
+      "mitre": {
+        "id": "T1140",
+        "tactic": "Execution",
+        "technique": "Technique T1140"
+      }
+    },
+    "agent": {
+      "id": "001",
+      "name": "windows-client",
+      "ip": "192.168.56.101"
+    },
+    "manager": {
+      "name": "wazuh-manager"
+    },
+    "data": {
+      "win": {
+        "eventdata": {
+          "Image": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+          "CommandLine": "powershell.exe -enc SQBFAFgA",
+          "ParentImage": "C:\\Windows\\System32\\winlogon.exe"
+        },
+        "system": {
+          "providerName": "Microsoft-Windows-PowerShell",
+          "eventID": "4104"
+        }
+      }
+    },
+    "location": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
+  },
+  {
+    "timestamp": "2024-05-28T14:10:00Z",
+    "rule": {
+      "level": 10,
+      "description": "Suspicious activity detected related to T1141",
+      "id": "200010",
+      "groups": [
+        "windows",
+        "sysmon",
+        "credential_access"
+      ],
+      "mitre": {
+        "id": "T1141",
+        "tactic": "Execution",
+        "technique": "Technique T1141"
+      }
+    },
+    "agent": {
+      "id": "001",
+      "name": "windows-client",
+      "ip": "192.168.56.101"
+    },
+    "manager": {
+      "name": "wazuh-manager"
+    },
+    "data": {
+      "win": {
+        "eventdata": {
+          "Image": "C:\\Windows\\System32\\net.exe",
+          "CommandLine": "net localgroup administrators",
+          "ParentImage": "C:\\Windows\\System32\\cmd.exe"
+        },
+        "system": {
+          "providerName": "Microsoft-Windows-Security-Auditing",
+          "eventID": "4688"
+        }
+      }
+    },
+    "location": "C:\\Windows\\System32\\net.exe"
+  },
+  {
+    "timestamp": "2024-05-28T14:11:00Z",
+    "rule": {
+      "level": 10,
+      "description": "Suspicious activity detected related to T1142",
+      "id": "200011",
+      "groups": [
+        "windows",
+        "sysmon",
+        "credential_access"
+      ],
+      "mitre": {
+        "id": "T1142",
+        "tactic": "Execution",
+        "technique": "Technique T1142"
+      }
+    },
+    "agent": {
+      "id": "001",
+      "name": "windows-client",
+      "ip": "192.168.56.101"
+    },
+    "manager": {
+      "name": "wazuh-manager"
+    },
+    "data": {
+      "win": {
+        "eventdata": {
+          "Image": "C:\\Windows\\System32\\net.exe",
+          "CommandLine": "net localgroup administrators",
+          "ParentImage": "C:\\Windows\\System32\\cmd.exe"
+        },
+        "system": {
+          "providerName": "Microsoft-Windows-Security-Auditing",
+          "eventID": "4688"
+        }
+      }
+    },
+    "location": "C:\\Windows\\System32\\net.exe"
+  },
+  {
+    "timestamp": "2024-05-28T14:12:00Z",
+    "rule": {
+      "level": 10,
+      "description": "Suspicious activity detected related to T1143",
+      "id": "200012",
+      "groups": [
+        "windows",
+        "sysmon",
+        "credential_access"
+      ],
+      "mitre": {
+        "id": "T1143",
+        "tactic": "Execution",
+        "technique": "Technique T1143"
+      }
+    },
+    "agent": {
+      "id": "001",
+      "name": "windows-client",
+      "ip": "192.168.56.101"
+    },
+    "manager": {
+      "name": "wazuh-manager"
+    },
+    "data": {
+      "win": {
+        "eventdata": {
+          "Image": "C:\\Windows\\System32\\schtasks.exe",
+          "CommandLine": "schtasks /create /tn backdoor /tr cmd.exe /sc minute",
+          "ParentImage": "C:\\Windows\\System32\\services.exe"
+        },
+        "system": {
+          "providerName": "Microsoft-Windows-Security-Auditing",
+          "eventID": "4688"
+        }
+      }
+    },
+    "location": "C:\\Windows\\System32\\schtasks.exe"
+  },
+  {
+    "timestamp": "2024-05-28T14:13:00Z",
+    "rule": {
+      "level": 10,
+      "description": "Suspicious activity detected related to T1144",
+      "id": "200013",
+      "groups": [
+        "windows",
+        "sysmon",
+        "credential_access"
+      ],
+      "mitre": {
+        "id": "T1144",
+        "tactic": "Execution",
+        "technique": "Technique T1144"
+      }
+    },
+    "agent": {
+      "id": "001",
+      "name": "windows-client",
+      "ip": "192.168.56.101"
+    },
+    "manager": {
+      "name": "wazuh-manager"
+    },
+    "data": {
+      "win": {
+        "eventdata": {
+          "Image": "C:\\Windows\\System32\\tasklist.exe",
+          "CommandLine": "tasklist /v",
+          "ParentImage": "C:\\Windows\\System32\\explorer.exe"
+        },
+        "system": {
+          "providerName": "Microsoft-Windows-Security-Auditing",
+          "eventID": "4688"
+        }
+      }
+    },
+    "location": "C:\\Windows\\System32\\tasklist.exe"
+  },
+  {
+    "timestamp": "2024-05-28T14:14:00Z",
+    "rule": {
+      "level": 10,
+      "description": "Suspicious activity detected related to T1145",
+      "id": "200014",
+      "groups": [
+        "windows",
+        "sysmon",
+        "credential_access"
+      ],
+      "mitre": {
+        "id": "T1145",
+        "tactic": "Execution",
+        "technique": "Technique T1145"
+      }
+    },
+    "agent": {
+      "id": "001",
+      "name": "windows-client",
+      "ip": "192.168.56.101"
+    },
+    "manager": {
+      "name": "wazuh-manager"
+    },
+    "data": {
+      "win": {
+        "eventdata": {
+          "Image": "C:\\Windows\\System32\\net.exe",
+          "CommandLine": "net localgroup administrators",
+          "ParentImage": "C:\\Windows\\System32\\cmd.exe"
+        },
+        "system": {
+          "providerName": "Microsoft-Windows-Security-Auditing",
+          "eventID": "4688"
+        }
+      }
+    },
+    "location": "C:\\Windows\\System32\\net.exe"
+  },
+  {
+    "timestamp": "2024-05-28T14:15:00Z",
+    "rule": {
+      "level": 10,
+      "description": "Suspicious activity detected related to T1146",
+      "id": "200015",
+      "groups": [
+        "windows",
+        "sysmon",
+        "credential_access"
+      ],
+      "mitre": {
+        "id": "T1146",
+        "tactic": "Execution",
+        "technique": "Technique T1146"
+      }
+    },
+    "agent": {
+      "id": "001",
+      "name": "windows-client",
+      "ip": "192.168.56.101"
+    },
+    "manager": {
+      "name": "wazuh-manager"
+    },
+    "data": {
+      "win": {
+        "eventdata": {
+          "Image": "C:\\Windows\\System32\\tasklist.exe",
+          "CommandLine": "tasklist /v",
+          "ParentImage": "C:\\Windows\\System32\\explorer.exe"
+        },
+        "system": {
+          "providerName": "Microsoft-Windows-Security-Auditing",
+          "eventID": "4688"
+        }
+      }
+    },
+    "location": "C:\\Windows\\System32\\tasklist.exe"
+  },
+  {
+    "timestamp": "2024-05-28T14:16:00Z",
+    "rule": {
+      "level": 10,
+      "description": "Suspicious activity detected related to T1147",
+      "id": "200016",
+      "groups": [
+        "windows",
+        "sysmon",
+        "credential_access"
+      ],
+      "mitre": {
+        "id": "T1147",
+        "tactic": "Execution",
+        "technique": "Technique T1147"
+      }
+    },
+    "agent": {
+      "id": "001",
+      "name": "windows-client",
+      "ip": "192.168.56.101"
+    },
+    "manager": {
+      "name": "wazuh-manager"
+    },
+    "data": {
+      "win": {
+        "eventdata": {
+          "Image": "C:\\Windows\\System32\\cmd.exe",
+          "CommandLine": "cmd.exe /c whoami",
+          "ParentImage": "C:\\Windows\\System32\\explorer.exe"
+        },
+        "system": {
+          "providerName": "Microsoft-Windows-Security-Auditing",
+          "eventID": "4688"
+        }
+      }
+    },
+    "location": "C:\\Windows\\System32\\cmd.exe"
+  },
+  {
+    "timestamp": "2024-05-28T14:17:00Z",
+    "rule": {
+      "level": 10,
+      "description": "Suspicious activity detected related to T1148",
+      "id": "200017",
+      "groups": [
+        "windows",
+        "sysmon",
+        "credential_access"
+      ],
+      "mitre": {
+        "id": "T1148",
+        "tactic": "Execution",
+        "technique": "Technique T1148"
+      }
+    },
+    "agent": {
+      "id": "001",
+      "name": "windows-client",
+      "ip": "192.168.56.101"
+    },
+    "manager": {
+      "name": "wazuh-manager"
+    },
+    "data": {
+      "win": {
+        "eventdata": {
+          "Image": "C:\\Windows\\System32\\net.exe",
+          "CommandLine": "net localgroup administrators",
+          "ParentImage": "C:\\Windows\\System32\\cmd.exe"
+        },
+        "system": {
+          "providerName": "Microsoft-Windows-Security-Auditing",
+          "eventID": "4688"
+        }
+      }
+    },
+    "location": "C:\\Windows\\System32\\net.exe"
+  },
+  {
+    "timestamp": "2024-05-28T14:18:00Z",
+    "rule": {
+      "level": 10,
+      "description": "Suspicious activity detected related to T1149",
+      "id": "200018",
+      "groups": [
+        "windows",
+        "sysmon",
+        "credential_access"
+      ],
+      "mitre": {
+        "id": "T1149",
+        "tactic": "Execution",
+        "technique": "Technique T1149"
+      }
+    },
+    "agent": {
+      "id": "001",
+      "name": "windows-client",
+      "ip": "192.168.56.101"
+    },
+    "manager": {
+      "name": "wazuh-manager"
+    },
+    "data": {
+      "win": {
+        "eventdata": {
+          "Image": "C:\\Windows\\System32\\schtasks.exe",
+          "CommandLine": "schtasks /create /tn backdoor /tr cmd.exe /sc minute",
+          "ParentImage": "C:\\Windows\\System32\\services.exe"
+        },
+        "system": {
+          "providerName": "Microsoft-Windows-Security-Auditing",
+          "eventID": "4688"
+        }
+      }
+    },
+    "location": "C:\\Windows\\System32\\schtasks.exe"
+  },
+  {
+    "timestamp": "2024-05-28T14:19:00Z",
+    "rule": {
+      "level": 10,
+      "description": "Suspicious activity detected related to T1150",
+      "id": "200019",
+      "groups": [
+        "windows",
+        "sysmon",
+        "credential_access"
+      ],
+      "mitre": {
+        "id": "T1150",
+        "tactic": "Execution",
+        "technique": "Technique T1150"
+      }
+    },
+    "agent": {
+      "id": "001",
+      "name": "windows-client",
+      "ip": "192.168.56.101"
+    },
+    "manager": {
+      "name": "wazuh-manager"
+    },
+    "data": {
+      "win": {
+        "eventdata": {
+          "Image": "C:\\Windows\\System32\\cmd.exe",
+          "CommandLine": "cmd.exe /c whoami",
+          "ParentImage": "C:\\Windows\\System32\\explorer.exe"
+        },
+        "system": {
+          "providerName": "Microsoft-Windows-Security-Auditing",
+          "eventID": "4688"
+        }
+      }
+    },
+    "location": "C:\\Windows\\System32\\cmd.exe"
+  },
+  {
+    "timestamp": "2024-05-28T14:20:00Z",
+    "rule": {
+      "level": 10,
+      "description": "Suspicious activity detected related to T1151",
+      "id": "200020",
+      "groups": [
+        "windows",
+        "sysmon",
+        "credential_access"
+      ],
+      "mitre": {
+        "id": "T1151",
+        "tactic": "Execution",
+        "technique": "Technique T1151"
+      }
+    },
+    "agent": {
+      "id": "001",
+      "name": "windows-client",
+      "ip": "192.168.56.101"
+    },
+    "manager": {
+      "name": "wazuh-manager"
+    },
+    "data": {
+      "win": {
+        "eventdata": {
+          "Image": "C:\\Windows\\System32\\net.exe",
+          "CommandLine": "net localgroup administrators",
+          "ParentImage": "C:\\Windows\\System32\\cmd.exe"
+        },
+        "system": {
+          "providerName": "Microsoft-Windows-Security-Auditing",
+          "eventID": "4688"
+        }
+      }
+    },
+    "location": "C:\\Windows\\System32\\net.exe"
+  },
+  {
+    "timestamp": "2024-05-28T14:21:00Z",
+    "rule": {
+      "level": 10,
+      "description": "Suspicious activity detected related to T1152",
+      "id": "200021",
+      "groups": [
+        "windows",
+        "sysmon",
+        "credential_access"
+      ],
+      "mitre": {
+        "id": "T1152",
+        "tactic": "Execution",
+        "technique": "Technique T1152"
+      }
+    },
+    "agent": {
+      "id": "001",
+      "name": "windows-client",
+      "ip": "192.168.56.101"
+    },
+    "manager": {
+      "name": "wazuh-manager"
+    },
+    "data": {
+      "win": {
+        "eventdata": {
+          "Image": "C:\\Windows\\System32\\cmd.exe",
+          "CommandLine": "cmd.exe /c whoami",
+          "ParentImage": "C:\\Windows\\System32\\explorer.exe"
+        },
+        "system": {
+          "providerName": "Microsoft-Windows-Security-Auditing",
+          "eventID": "4688"
+        }
+      }
+    },
+    "location": "C:\\Windows\\System32\\cmd.exe"
+  },
+  {
+    "timestamp": "2024-05-28T14:22:00Z",
+    "rule": {
+      "level": 10,
+      "description": "Suspicious activity detected related to T1153",
+      "id": "200022",
+      "groups": [
+        "windows",
+        "sysmon",
+        "credential_access"
+      ],
+      "mitre": {
+        "id": "T1153",
+        "tactic": "Execution",
+        "technique": "Technique T1153"
+      }
+    },
+    "agent": {
+      "id": "001",
+      "name": "windows-client",
+      "ip": "192.168.56.101"
+    },
+    "manager": {
+      "name": "wazuh-manager"
+    },
+    "data": {
+      "win": {
+        "eventdata": {
+          "Image": "C:\\Windows\\System32\\net.exe",
+          "CommandLine": "net localgroup administrators",
+          "ParentImage": "C:\\Windows\\System32\\cmd.exe"
+        },
+        "system": {
+          "providerName": "Microsoft-Windows-Security-Auditing",
+          "eventID": "4688"
+        }
+      }
+    },
+    "location": "C:\\Windows\\System32\\net.exe"
+  },
+  {
+    "timestamp": "2024-05-28T14:23:00Z",
+    "rule": {
+      "level": 10,
+      "description": "Suspicious activity detected related to T1154",
+      "id": "200023",
+      "groups": [
+        "windows",
+        "sysmon",
+        "credential_access"
+      ],
+      "mitre": {
+        "id": "T1154",
+        "tactic": "Execution",
+        "technique": "Technique T1154"
+      }
+    },
+    "agent": {
+      "id": "001",
+      "name": "windows-client",
+      "ip": "192.168.56.101"
+    },
+    "manager": {
+      "name": "wazuh-manager"
+    },
+    "data": {
+      "win": {
+        "eventdata": {
+          "Image": "C:\\Windows\\System32\\net.exe",
+          "CommandLine": "net localgroup administrators",
+          "ParentImage": "C:\\Windows\\System32\\cmd.exe"
+        },
+        "system": {
+          "providerName": "Microsoft-Windows-Security-Auditing",
+          "eventID": "4688"
+        }
+      }
+    },
+    "location": "C:\\Windows\\System32\\net.exe"
+  },
+  {
+    "timestamp": "2024-05-28T14:24:00Z",
+    "rule": {
+      "level": 10,
+      "description": "Suspicious activity detected related to T1155",
+      "id": "200024",
+      "groups": [
+        "windows",
+        "sysmon",
+        "credential_access"
+      ],
+      "mitre": {
+        "id": "T1155",
+        "tactic": "Execution",
+        "technique": "Technique T1155"
+      }
+    },
+    "agent": {
+      "id": "001",
+      "name": "windows-client",
+      "ip": "192.168.56.101"
+    },
+    "manager": {
+      "name": "wazuh-manager"
+    },
+    "data": {
+      "win": {
+        "eventdata": {
+          "Image": "C:\\Windows\\System32\\schtasks.exe",
+          "CommandLine": "schtasks /create /tn backdoor /tr cmd.exe /sc minute",
+          "ParentImage": "C:\\Windows\\System32\\services.exe"
+        },
+        "system": {
+          "providerName": "Microsoft-Windows-Security-Auditing",
+          "eventID": "4688"
+        }
+      }
+    },
+    "location": "C:\\Windows\\System32\\schtasks.exe"
+  },
+  {
+    "timestamp": "2024-05-28T14:25:00Z",
+    "rule": {
+      "level": 10,
+      "description": "Suspicious activity detected related to T1156",
+      "id": "200025",
+      "groups": [
+        "windows",
+        "sysmon",
+        "credential_access"
+      ],
+      "mitre": {
+        "id": "T1156",
+        "tactic": "Execution",
+        "technique": "Technique T1156"
+      }
+    },
+    "agent": {
+      "id": "001",
+      "name": "windows-client",
+      "ip": "192.168.56.101"
+    },
+    "manager": {
+      "name": "wazuh-manager"
+    },
+    "data": {
+      "win": {
+        "eventdata": {
+          "Image": "C:\\Windows\\System32\\cmd.exe",
+          "CommandLine": "cmd.exe /c whoami",
+          "ParentImage": "C:\\Windows\\System32\\explorer.exe"
+        },
+        "system": {
+          "providerName": "Microsoft-Windows-Security-Auditing",
+          "eventID": "4688"
+        }
+      }
+    },
+    "location": "C:\\Windows\\System32\\cmd.exe"
+  },
+  {
+    "timestamp": "2024-05-28T14:26:00Z",
+    "rule": {
+      "level": 10,
+      "description": "Suspicious activity detected related to T1157",
+      "id": "200026",
+      "groups": [
+        "windows",
+        "sysmon",
+        "credential_access"
+      ],
+      "mitre": {
+        "id": "T1157",
+        "tactic": "Execution",
+        "technique": "Technique T1157"
+      }
+    },
+    "agent": {
+      "id": "001",
+      "name": "windows-client",
+      "ip": "192.168.56.101"
+    },
+    "manager": {
+      "name": "wazuh-manager"
+    },
+    "data": {
+      "win": {
+        "eventdata": {
+          "Image": "C:\\Windows\\System32\\cmd.exe",
+          "CommandLine": "cmd.exe /c whoami",
+          "ParentImage": "C:\\Windows\\System32\\explorer.exe"
+        },
+        "system": {
+          "providerName": "Microsoft-Windows-Security-Auditing",
+          "eventID": "4688"
+        }
+      }
+    },
+    "location": "C:\\Windows\\System32\\cmd.exe"
+  },
+  {
+    "timestamp": "2024-05-28T14:27:00Z",
+    "rule": {
+      "level": 10,
+      "description": "Suspicious activity detected related to T1158",
+      "id": "200027",
+      "groups": [
+        "windows",
+        "sysmon",
+        "credential_access"
+      ],
+      "mitre": {
+        "id": "T1158",
+        "tactic": "Execution",
+        "technique": "Technique T1158"
+      }
+    },
+    "agent": {
+      "id": "001",
+      "name": "windows-client",
+      "ip": "192.168.56.101"
+    },
+    "manager": {
+      "name": "wazuh-manager"
+    },
+    "data": {
+      "win": {
+        "eventdata": {
+          "Image": "C:\\Windows\\System32\\tasklist.exe",
+          "CommandLine": "tasklist /v",
+          "ParentImage": "C:\\Windows\\System32\\explorer.exe"
+        },
+        "system": {
+          "providerName": "Microsoft-Windows-Security-Auditing",
+          "eventID": "4688"
+        }
+      }
+    },
+    "location": "C:\\Windows\\System32\\tasklist.exe"
+  },
+  {
+    "timestamp": "2024-05-28T14:28:00Z",
+    "rule": {
+      "level": 10,
+      "description": "Suspicious activity detected related to T1159",
+      "id": "200028",
+      "groups": [
+        "windows",
+        "sysmon",
+        "credential_access"
+      ],
+      "mitre": {
+        "id": "T1159",
+        "tactic": "Execution",
+        "technique": "Technique T1159"
+      }
+    },
+    "agent": {
+      "id": "001",
+      "name": "windows-client",
+      "ip": "192.168.56.101"
+    },
+    "manager": {
+      "name": "wazuh-manager"
+    },
+    "data": {
+      "win": {
+        "eventdata": {
+          "Image": "C:\\Windows\\System32\\tasklist.exe",
+          "CommandLine": "tasklist /v",
+          "ParentImage": "C:\\Windows\\System32\\explorer.exe"
+        },
+        "system": {
+          "providerName": "Microsoft-Windows-Security-Auditing",
+          "eventID": "4688"
+        }
+      }
+    },
+    "location": "C:\\Windows\\System32\\tasklist.exe"
+  },
+  {
+    "timestamp": "2024-05-28T14:29:00Z",
+    "rule": {
+      "level": 10,
+      "description": "Suspicious activity detected related to T1160",
+      "id": "200029",
+      "groups": [
+        "windows",
+        "sysmon",
+        "credential_access"
+      ],
+      "mitre": {
+        "id": "T1160",
+        "tactic": "Execution",
+        "technique": "Technique T1160"
+      }
+    },
+    "agent": {
+      "id": "001",
+      "name": "windows-client",
+      "ip": "192.168.56.101"
+    },
+    "manager": {
+      "name": "wazuh-manager"
+    },
+    "data": {
+      "win": {
+        "eventdata": {
+          "Image": "C:\\Windows\\System32\\cmd.exe",
+          "CommandLine": "cmd.exe /c whoami",
+          "ParentImage": "C:\\Windows\\System32\\explorer.exe"
+        },
+        "system": {
+          "providerName": "Microsoft-Windows-Security-Auditing",
+          "eventID": "4688"
+        }
+      }
+    },
+    "location": "C:\\Windows\\System32\\cmd.exe"
+  },
+  {
+    "timestamp": "2024-05-28T14:30:00Z",
+    "rule": {
+      "level": 10,
+      "description": "Suspicious activity detected related to T1161",
+      "id": "200030",
+      "groups": [
+        "windows",
+        "sysmon",
+        "credential_access"
+      ],
+      "mitre": {
+        "id": "T1161",
+        "tactic": "Execution",
+        "technique": "Technique T1161"
+      }
+    },
+    "agent": {
+      "id": "001",
+      "name": "windows-client",
+      "ip": "192.168.56.101"
+    },
+    "manager": {
+      "name": "wazuh-manager"
+    },
+    "data": {
+      "win": {
+        "eventdata": {
+          "Image": "C:\\Windows\\System32\\tasklist.exe",
+          "CommandLine": "tasklist /v",
+          "ParentImage": "C:\\Windows\\System32\\explorer.exe"
+        },
+        "system": {
+          "providerName": "Microsoft-Windows-Security-Auditing",
+          "eventID": "4688"
+        }
+      }
+    },
+    "location": "C:\\Windows\\System32\\tasklist.exe"
+  },
+  {
+    "timestamp": "2024-05-28T14:31:00Z",
+    "rule": {
+      "level": 10,
+      "description": "Suspicious activity detected related to T1162",
+      "id": "200031",
+      "groups": [
+        "windows",
+        "sysmon",
+        "credential_access"
+      ],
+      "mitre": {
+        "id": "T1162",
+        "tactic": "Execution",
+        "technique": "Technique T1162"
+      }
+    },
+    "agent": {
+      "id": "001",
+      "name": "windows-client",
+      "ip": "192.168.56.101"
+    },
+    "manager": {
+      "name": "wazuh-manager"
+    },
+    "data": {
+      "win": {
+        "eventdata": {
+          "Image": "C:\\Windows\\System32\\net.exe",
+          "CommandLine": "net localgroup administrators",
+          "ParentImage": "C:\\Windows\\System32\\cmd.exe"
+        },
+        "system": {
+          "providerName": "Microsoft-Windows-Security-Auditing",
+          "eventID": "4688"
+        }
+      }
+    },
+    "location": "C:\\Windows\\System32\\net.exe"
+  },
+  {
+    "timestamp": "2024-05-28T14:32:00Z",
+    "rule": {
+      "level": 10,
+      "description": "Suspicious activity detected related to T1163",
+      "id": "200032",
+      "groups": [
+        "windows",
+        "sysmon",
+        "credential_access"
+      ],
+      "mitre": {
+        "id": "T1163",
+        "tactic": "Execution",
+        "technique": "Technique T1163"
+      }
+    },
+    "agent": {
+      "id": "001",
+      "name": "windows-client",
+      "ip": "192.168.56.101"
+    },
+    "manager": {
+      "name": "wazuh-manager"
+    },
+    "data": {
+      "win": {
+        "eventdata": {
+          "Image": "C:\\Windows\\System32\\schtasks.exe",
+          "CommandLine": "schtasks /create /tn backdoor /tr cmd.exe /sc minute",
+          "ParentImage": "C:\\Windows\\System32\\services.exe"
+        },
+        "system": {
+          "providerName": "Microsoft-Windows-Security-Auditing",
+          "eventID": "4688"
+        }
+      }
+    },
+    "location": "C:\\Windows\\System32\\schtasks.exe"
+  },
+  {
+    "timestamp": "2024-05-28T14:33:00Z",
+    "rule": {
+      "level": 10,
+      "description": "Suspicious activity detected related to T1164",
+      "id": "200033",
+      "groups": [
+        "windows",
+        "sysmon",
+        "credential_access"
+      ],
+      "mitre": {
+        "id": "T1164",
+        "tactic": "Execution",
+        "technique": "Technique T1164"
+      }
+    },
+    "agent": {
+      "id": "001",
+      "name": "windows-client",
+      "ip": "192.168.56.101"
+    },
+    "manager": {
+      "name": "wazuh-manager"
+    },
+    "data": {
+      "win": {
+        "eventdata": {
+          "Image": "C:\\Windows\\System32\\tasklist.exe",
+          "CommandLine": "tasklist /v",
+          "ParentImage": "C:\\Windows\\System32\\explorer.exe"
+        },
+        "system": {
+          "providerName": "Microsoft-Windows-Security-Auditing",
+          "eventID": "4688"
+        }
+      }
+    },
+    "location": "C:\\Windows\\System32\\tasklist.exe"
+  },
+  {
+    "timestamp": "2024-05-28T14:34:00Z",
+    "rule": {
+      "level": 10,
+      "description": "Suspicious activity detected related to T1165",
+      "id": "200034",
+      "groups": [
+        "windows",
+        "sysmon",
+        "credential_access"
+      ],
+      "mitre": {
+        "id": "T1165",
+        "tactic": "Execution",
+        "technique": "Technique T1165"
+      }
+    },
+    "agent": {
+      "id": "001",
+      "name": "windows-client",
+      "ip": "192.168.56.101"
+    },
+    "manager": {
+      "name": "wazuh-manager"
+    },
+    "data": {
+      "win": {
+        "eventdata": {
+          "Image": "C:\\Windows\\System32\\net.exe",
+          "CommandLine": "net localgroup administrators",
+          "ParentImage": "C:\\Windows\\System32\\cmd.exe"
+        },
+        "system": {
+          "providerName": "Microsoft-Windows-Security-Auditing",
+          "eventID": "4688"
+        }
+      }
+    },
+    "location": "C:\\Windows\\System32\\net.exe"
+  },
+  {
+    "timestamp": "2024-05-28T14:35:00Z",
+    "rule": {
+      "level": 10,
+      "description": "Suspicious activity detected related to T1166",
+      "id": "200035",
+      "groups": [
+        "windows",
+        "sysmon",
+        "credential_access"
+      ],
+      "mitre": {
+        "id": "T1166",
+        "tactic": "Execution",
+        "technique": "Technique T1166"
+      }
+    },
+    "agent": {
+      "id": "001",
+      "name": "windows-client",
+      "ip": "192.168.56.101"
+    },
+    "manager": {
+      "name": "wazuh-manager"
+    },
+    "data": {
+      "win": {
+        "eventdata": {
+          "Image": "C:\\Windows\\System32\\cmd.exe",
+          "CommandLine": "cmd.exe /c whoami",
+          "ParentImage": "C:\\Windows\\System32\\explorer.exe"
+        },
+        "system": {
+          "providerName": "Microsoft-Windows-Security-Auditing",
+          "eventID": "4688"
+        }
+      }
+    },
+    "location": "C:\\Windows\\System32\\cmd.exe"
+  },
+  {
+    "timestamp": "2024-05-28T14:36:00Z",
+    "rule": {
+      "level": 10,
+      "description": "Suspicious activity detected related to T1167",
+      "id": "200036",
+      "groups": [
+        "windows",
+        "sysmon",
+        "credential_access"
+      ],
+      "mitre": {
+        "id": "T1167",
+        "tactic": "Execution",
+        "technique": "Technique T1167"
+      }
+    },
+    "agent": {
+      "id": "001",
+      "name": "windows-client",
+      "ip": "192.168.56.101"
+    },
+    "manager": {
+      "name": "wazuh-manager"
+    },
+    "data": {
+      "win": {
+        "eventdata": {
+          "Image": "C:\\Windows\\System32\\tasklist.exe",
+          "CommandLine": "tasklist /v",
+          "ParentImage": "C:\\Windows\\System32\\explorer.exe"
+        },
+        "system": {
+          "providerName": "Microsoft-Windows-Security-Auditing",
+          "eventID": "4688"
+        }
+      }
+    },
+    "location": "C:\\Windows\\System32\\tasklist.exe"
+  },
+  {
+    "timestamp": "2024-05-28T14:37:00Z",
+    "rule": {
+      "level": 10,
+      "description": "Suspicious activity detected related to T1168",
+      "id": "200037",
+      "groups": [
+        "windows",
+        "sysmon",
+        "credential_access"
+      ],
+      "mitre": {
+        "id": "T1168",
+        "tactic": "Execution",
+        "technique": "Technique T1168"
+      }
+    },
+    "agent": {
+      "id": "001",
+      "name": "windows-client",
+      "ip": "192.168.56.101"
+    },
+    "manager": {
+      "name": "wazuh-manager"
+    },
+    "data": {
+      "win": {
+        "eventdata": {
+          "Image": "C:\\Windows\\System32\\tasklist.exe",
+          "CommandLine": "tasklist /v",
+          "ParentImage": "C:\\Windows\\System32\\explorer.exe"
+        },
+        "system": {
+          "providerName": "Microsoft-Windows-Security-Auditing",
+          "eventID": "4688"
+        }
+      }
+    },
+    "location": "C:\\Windows\\System32\\tasklist.exe"
+  },
+  {
+    "timestamp": "2024-05-28T14:38:00Z",
+    "rule": {
+      "level": 10,
+      "description": "Suspicious activity detected related to T1169",
+      "id": "200038",
+      "groups": [
+        "windows",
+        "sysmon",
+        "credential_access"
+      ],
+      "mitre": {
+        "id": "T1169",
+        "tactic": "Execution",
+        "technique": "Technique T1169"
+      }
+    },
+    "agent": {
+      "id": "001",
+      "name": "windows-client",
+      "ip": "192.168.56.101"
+    },
+    "manager": {
+      "name": "wazuh-manager"
+    },
+    "data": {
+      "win": {
+        "eventdata": {
+          "Image": "C:\\Windows\\System32\\net.exe",
+          "CommandLine": "net localgroup administrators",
+          "ParentImage": "C:\\Windows\\System32\\cmd.exe"
+        },
+        "system": {
+          "providerName": "Microsoft-Windows-Security-Auditing",
+          "eventID": "4688"
+        }
+      }
+    },
+    "location": "C:\\Windows\\System32\\net.exe"
+  },
+  {
+    "timestamp": "2024-05-28T14:39:00Z",
+    "rule": {
+      "level": 10,
+      "description": "Suspicious activity detected related to T1170",
+      "id": "200039",
+      "groups": [
+        "windows",
+        "sysmon",
+        "credential_access"
+      ],
+      "mitre": {
+        "id": "T1170",
+        "tactic": "Execution",
+        "technique": "Technique T1170"
+      }
+    },
+    "agent": {
+      "id": "001",
+      "name": "windows-client",
+      "ip": "192.168.56.101"
+    },
+    "manager": {
+      "name": "wazuh-manager"
+    },
+    "data": {
+      "win": {
+        "eventdata": {
+          "Image": "C:\\Windows\\System32\\schtasks.exe",
+          "CommandLine": "schtasks /create /tn backdoor /tr cmd.exe /sc minute",
+          "ParentImage": "C:\\Windows\\System32\\services.exe"
+        },
+        "system": {
+          "providerName": "Microsoft-Windows-Security-Auditing",
+          "eventID": "4688"
+        }
+      }
+    },
+    "location": "C:\\Windows\\System32\\schtasks.exe"
+  },
+  {
+    "timestamp": "2024-05-28T14:40:00Z",
+    "rule": {
+      "level": 10,
+      "description": "Suspicious activity detected related to T1171",
+      "id": "200040",
+      "groups": [
+        "windows",
+        "sysmon",
+        "credential_access"
+      ],
+      "mitre": {
+        "id": "T1171",
+        "tactic": "Execution",
+        "technique": "Technique T1171"
+      }
+    },
+    "agent": {
+      "id": "001",
+      "name": "windows-client",
+      "ip": "192.168.56.101"
+    },
+    "manager": {
+      "name": "wazuh-manager"
+    },
+    "data": {
+      "win": {
+        "eventdata": {
+          "Image": "C:\\Windows\\System32\\net.exe",
+          "CommandLine": "net localgroup administrators",
+          "ParentImage": "C:\\Windows\\System32\\cmd.exe"
+        },
+        "system": {
+          "providerName": "Microsoft-Windows-Security-Auditing",
+          "eventID": "4688"
+        }
+      }
+    },
+    "location": "C:\\Windows\\System32\\net.exe"
+  },
+  {
+    "timestamp": "2024-05-28T14:41:00Z",
+    "rule": {
+      "level": 10,
+      "description": "Suspicious activity detected related to T1172",
+      "id": "200041",
+      "groups": [
+        "windows",
+        "sysmon",
+        "credential_access"
+      ],
+      "mitre": {
+        "id": "T1172",
+        "tactic": "Execution",
+        "technique": "Technique T1172"
+      }
+    },
+    "agent": {
+      "id": "001",
+      "name": "windows-client",
+      "ip": "192.168.56.101"
+    },
+    "manager": {
+      "name": "wazuh-manager"
+    },
+    "data": {
+      "win": {
+        "eventdata": {
+          "Image": "C:\\Windows\\System32\\net.exe",
+          "CommandLine": "net localgroup administrators",
+          "ParentImage": "C:\\Windows\\System32\\cmd.exe"
+        },
+        "system": {
+          "providerName": "Microsoft-Windows-Security-Auditing",
+          "eventID": "4688"
+        }
+      }
+    },
+    "location": "C:\\Windows\\System32\\net.exe"
+  },
+  {
+    "timestamp": "2024-05-28T14:42:00Z",
+    "rule": {
+      "level": 10,
+      "description": "Suspicious activity detected related to T1173",
+      "id": "200042",
+      "groups": [
+        "windows",
+        "sysmon",
+        "credential_access"
+      ],
+      "mitre": {
+        "id": "T1173",
+        "tactic": "Execution",
+        "technique": "Technique T1173"
+      }
+    },
+    "agent": {
+      "id": "001",
+      "name": "windows-client",
+      "ip": "192.168.56.101"
+    },
+    "manager": {
+      "name": "wazuh-manager"
+    },
+    "data": {
+      "win": {
+        "eventdata": {
+          "Image": "C:\\Windows\\System32\\net.exe",
+          "CommandLine": "net localgroup administrators",
+          "ParentImage": "C:\\Windows\\System32\\cmd.exe"
+        },
+        "system": {
+          "providerName": "Microsoft-Windows-Security-Auditing",
+          "eventID": "4688"
+        }
+      }
+    },
+    "location": "C:\\Windows\\System32\\net.exe"
+  },
+  {
+    "timestamp": "2024-05-28T14:43:00Z",
+    "rule": {
+      "level": 10,
+      "description": "Suspicious activity detected related to T1174",
+      "id": "200043",
+      "groups": [
+        "windows",
+        "sysmon",
+        "credential_access"
+      ],
+      "mitre": {
+        "id": "T1174",
+        "tactic": "Execution",
+        "technique": "Technique T1174"
+      }
+    },
+    "agent": {
+      "id": "001",
+      "name": "windows-client",
+      "ip": "192.168.56.101"
+    },
+    "manager": {
+      "name": "wazuh-manager"
+    },
+    "data": {
+      "win": {
+        "eventdata": {
+          "Image": "C:\\Windows\\System32\\schtasks.exe",
+          "CommandLine": "schtasks /create /tn backdoor /tr cmd.exe /sc minute",
+          "ParentImage": "C:\\Windows\\System32\\services.exe"
+        },
+        "system": {
+          "providerName": "Microsoft-Windows-Security-Auditing",
+          "eventID": "4688"
+        }
+      }
+    },
+    "location": "C:\\Windows\\System32\\schtasks.exe"
+  },
+  {
+    "timestamp": "2024-05-28T14:44:00Z",
+    "rule": {
+      "level": 10,
+      "description": "Suspicious activity detected related to T1175",
+      "id": "200044",
+      "groups": [
+        "windows",
+        "sysmon",
+        "credential_access"
+      ],
+      "mitre": {
+        "id": "T1175",
+        "tactic": "Execution",
+        "technique": "Technique T1175"
+      }
+    },
+    "agent": {
+      "id": "001",
+      "name": "windows-client",
+      "ip": "192.168.56.101"
+    },
+    "manager": {
+      "name": "wazuh-manager"
+    },
+    "data": {
+      "win": {
+        "eventdata": {
+          "Image": "C:\\Windows\\System32\\cmd.exe",
+          "CommandLine": "cmd.exe /c whoami",
+          "ParentImage": "C:\\Windows\\System32\\explorer.exe"
+        },
+        "system": {
+          "providerName": "Microsoft-Windows-Security-Auditing",
+          "eventID": "4688"
+        }
+      }
+    },
+    "location": "C:\\Windows\\System32\\cmd.exe"
+  },
+  {
+    "timestamp": "2024-05-28T14:45:00Z",
+    "rule": {
+      "level": 10,
+      "description": "Suspicious activity detected related to T1176",
+      "id": "200045",
+      "groups": [
+        "windows",
+        "sysmon",
+        "credential_access"
+      ],
+      "mitre": {
+        "id": "T1176",
+        "tactic": "Execution",
+        "technique": "Technique T1176"
+      }
+    },
+    "agent": {
+      "id": "001",
+      "name": "windows-client",
+      "ip": "192.168.56.101"
+    },
+    "manager": {
+      "name": "wazuh-manager"
+    },
+    "data": {
+      "win": {
+        "eventdata": {
+          "Image": "C:\\Windows\\System32\\cmd.exe",
+          "CommandLine": "cmd.exe /c whoami",
+          "ParentImage": "C:\\Windows\\System32\\explorer.exe"
+        },
+        "system": {
+          "providerName": "Microsoft-Windows-Security-Auditing",
+          "eventID": "4688"
+        }
+      }
+    },
+    "location": "C:\\Windows\\System32\\cmd.exe"
+  },
+  {
+    "timestamp": "2024-05-28T14:46:00Z",
+    "rule": {
+      "level": 10,
+      "description": "Suspicious activity detected related to T1177",
+      "id": "200046",
+      "groups": [
+        "windows",
+        "sysmon",
+        "credential_access"
+      ],
+      "mitre": {
+        "id": "T1177",
+        "tactic": "Execution",
+        "technique": "Technique T1177"
+      }
+    },
+    "agent": {
+      "id": "001",
+      "name": "windows-client",
+      "ip": "192.168.56.101"
+    },
+    "manager": {
+      "name": "wazuh-manager"
+    },
+    "data": {
+      "win": {
+        "eventdata": {
+          "Image": "C:\\Windows\\System32\\net.exe",
+          "CommandLine": "net localgroup administrators",
+          "ParentImage": "C:\\Windows\\System32\\cmd.exe"
+        },
+        "system": {
+          "providerName": "Microsoft-Windows-Security-Auditing",
+          "eventID": "4688"
+        }
+      }
+    },
+    "location": "C:\\Windows\\System32\\net.exe"
+  },
+  {
+    "timestamp": "2024-05-28T14:47:00Z",
+    "rule": {
+      "level": 10,
+      "description": "Suspicious activity detected related to T1178",
+      "id": "200047",
+      "groups": [
+        "windows",
+        "sysmon",
+        "credential_access"
+      ],
+      "mitre": {
+        "id": "T1178",
+        "tactic": "Execution",
+        "technique": "Technique T1178"
+      }
+    },
+    "agent": {
+      "id": "001",
+      "name": "windows-client",
+      "ip": "192.168.56.101"
+    },
+    "manager": {
+      "name": "wazuh-manager"
+    },
+    "data": {
+      "win": {
+        "eventdata": {
+          "Image": "C:\\Windows\\System32\\cmd.exe",
+          "CommandLine": "cmd.exe /c whoami",
+          "ParentImage": "C:\\Windows\\System32\\explorer.exe"
+        },
+        "system": {
+          "providerName": "Microsoft-Windows-Security-Auditing",
+          "eventID": "4688"
+        }
+      }
+    },
+    "location": "C:\\Windows\\System32\\cmd.exe"
+  },
+  {
+    "timestamp": "2024-05-28T14:48:00Z",
+    "rule": {
+      "level": 10,
+      "description": "Suspicious activity detected related to T1179",
+      "id": "200048",
+      "groups": [
+        "windows",
+        "sysmon",
+        "credential_access"
+      ],
+      "mitre": {
+        "id": "T1179",
+        "tactic": "Execution",
+        "technique": "Technique T1179"
+      }
+    },
+    "agent": {
+      "id": "001",
+      "name": "windows-client",
+      "ip": "192.168.56.101"
+    },
+    "manager": {
+      "name": "wazuh-manager"
+    },
+    "data": {
+      "win": {
+        "eventdata": {
+          "Image": "C:\\Windows\\System32\\net.exe",
+          "CommandLine": "net localgroup administrators",
+          "ParentImage": "C:\\Windows\\System32\\cmd.exe"
+        },
+        "system": {
+          "providerName": "Microsoft-Windows-Security-Auditing",
+          "eventID": "4688"
+        }
+      }
+    },
+    "location": "C:\\Windows\\System32\\net.exe"
+  },
+  {
+    "timestamp": "2024-05-28T14:49:00Z",
+    "rule": {
+      "level": 10,
+      "description": "Suspicious activity detected related to T1180",
+      "id": "200049",
+      "groups": [
+        "windows",
+        "sysmon",
+        "credential_access"
+      ],
+      "mitre": {
+        "id": "T1180",
+        "tactic": "Execution",
+        "technique": "Technique T1180"
+      }
+    },
+    "agent": {
+      "id": "001",
+      "name": "windows-client",
+      "ip": "192.168.56.101"
+    },
+    "manager": {
+      "name": "wazuh-manager"
+    },
+    "data": {
+      "win": {
+        "eventdata": {
+          "Image": "C:\\Windows\\System32\\cmd.exe",
+          "CommandLine": "cmd.exe /c whoami",
+          "ParentImage": "C:\\Windows\\System32\\explorer.exe"
+        },
+        "system": {
+          "providerName": "Microsoft-Windows-Security-Auditing",
+          "eventID": "4688"
+        }
+      }
+    },
+    "location": "C:\\Windows\\System32\\cmd.exe"
+  }
+]
