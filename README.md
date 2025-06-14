@@ -1,4 +1,4 @@
-# 🛡️ SIEM Threat Detection Lab – MITRE ATT&CK Simulation & Detection
+# SIEM Threat Detection Lab – MITRE ATT&CK Simulation & Detection
 
 ## Project Overview
 
